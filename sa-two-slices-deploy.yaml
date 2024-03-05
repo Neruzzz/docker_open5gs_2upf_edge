@@ -2,9 +2,9 @@ version: '3'
 
 services:
 
-  mosquitto:
+  mqtt:
     image: eclipse-mosquitto:latest
-    container_name: mqtt_server
+    container_name: mqttserver
     env_file:
       - .env
     ports:
